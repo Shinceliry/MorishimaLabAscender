@@ -26,7 +26,7 @@ A version of [Ascender](https://github.com/cvpaperchallenge-alumni/Ascender) cus
     └── README.md              <- Top-level README for developers.
 ```
 
-### ✅ Environment Variable Setup
+## ✅ Environment Variable Setup
 
 🔧 Save Host UID and GID
 
