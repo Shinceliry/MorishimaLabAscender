@@ -73,4 +73,4 @@ bash scripts/mic/mic.sh   # MicMachine
 ```
 
 ## If you want to change repogitory name...
-You must also change 'PROJECT_NAME_ENV' in all 'environments/**/.envs' files.
+You must also change '''PROJECT_NAME_ENV''' in all '''environments/**/.envs''' files.
