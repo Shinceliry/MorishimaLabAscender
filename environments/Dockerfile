@@ -15,13 +15,14 @@ ENV DEBIAN_FRONTEND="noninteractive" \
     LANG="C.UTF-8" \
     PYTHONPATH=${APPLICATION_DIRECTORY}
 
+RUN chmod 1777 /tmp /var/tmp
 RUN apt update -y && apt install --no-install-recommends -y software-properties-common gpg-agent \
     # Add deadsnakes PPA to install older Python versions
     && add-apt-repository ppa:deadsnakes/ppa \
     && apt-get update && apt-get install -y \
     # Install specified Python
     python${PYTHON_VERSION} python${PYTHON_VERSION}-dev python3-pip python3-dev python-is-python3 \
-    build-essential openssl libssl-dev libffi-dev ca-certificates git curl ssh openssh-client \
+    build-essential openssl libssl-dev libffi-dev ca-certificates git curl ssh openssh-client ffmpeg \
     && update-ca-certificates \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -42,6 +43,7 @@ RUN groupadd -g ${GID} ${GROUP_NAME} \
     && useradd -ms /bin/sh -u ${UID} -g ${GID} ${USER_NAME}
 
 USER ${USER_NAME}
+ENV USER=${USER_NAME}
 WORKDIR ${APPLICATION_DIRECTORY}
 
 COPY --chown=${UID}:${GID} pyproject.toml uv.lock ./
