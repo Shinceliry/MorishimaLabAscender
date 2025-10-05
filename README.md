@@ -63,7 +63,7 @@ Apply changes:
 ```bash
 source ~/.bash_profile
 ```
-## Activae Docker Container
+## Activate Docker Container
 Run the transcription script:
 
 ```bash
