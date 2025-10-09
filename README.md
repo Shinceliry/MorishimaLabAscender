@@ -64,7 +64,6 @@ Apply changes:
 source ~/.bash_profile
 ```
 ## Activate Docker Container
-Run the transcription script:
 
 ```bash
 bash scripts/A6000/1st.sh # A6000 1st
