@@ -66,9 +66,9 @@ source ~/.bash_profile
 ## Activate Docker Container
 
 ```bash
-bash scripts/A6000/1st.sh # A6000 1st
-bash scripts/A6000/2nd.sh # A6000 2nd
-bash scripts/mic/mic.sh   # MicMachine
+bash scripts/docker/a6000/1st.sh # A6000 1st
+bash scripts/docker/a6000/2nd.sh # A6000 2nd
+bash scripts/docker/mic/mic.sh   # MicMachine
 ```
 
 ## If you want to change repogitory name...
