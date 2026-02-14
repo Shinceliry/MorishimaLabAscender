@@ -66,9 +66,9 @@ source ~/.bash_profile
 ## Activate Docker Container
 
 ```bash
-bash scripts/docker/a6000/1st.sh     # A6000 1st
-bash scripts/docker/a6000/1st_emg.sh # A6000 1st (/homeが復旧するまではこっちを使用)
-bash scripts/docker/a6000/2nd.sh     # A6000 2nd
+bash scripts/docker/a6000/1st.sh     # A6000 1st (LinuxのOSアプデが必要 -> アプデ後ダメだったらDockerfileをenvironments/A6000_1st_emergency/Dockerfile_1stemgに変更して試す)
+bash scripts/docker/a6000/1st_emg.sh # A6000 1st (復旧するまではこっちを使用)
+bash scripts/docker/a6000/2nd.sh     # A6000 2nd (LinuxのOSアプデが必要 -> アプデ後ダメだったらDockerfileをenvironments/A6000_1st_emergency/Dockerfile_1stemgに変更して試す)
 bash scripts/docker/mic/mic.sh       # MicMachine
 ```
 
